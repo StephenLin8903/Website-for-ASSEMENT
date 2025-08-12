@@ -8,18 +8,21 @@
 
 .hero-text{
     color:whitesmoke
-    position: absolute;
+    position:absolute;
     text-align: center;
-    top: 150px;
+    top: 280px;
     width: 100%;
-    font-size: 4rem;
+    font-size: 6rem;
 }
 
-.four-column{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-    width: 80%;
-    margin: auto;
-    margin-top: 40px;
-}
+.four-column .image img {
+    width: 15%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .four-column .image {
+    /* Set a fixed height for the container */
+    height: 300px; 
+  }
+  
