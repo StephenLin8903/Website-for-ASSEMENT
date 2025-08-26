@@ -1,28 +1,27 @@
-.hero-image{
-    background: url("./Chess img/download.jpg") ;
+.hero-image {
+    background: url("./Chess img/download.jpg");
     height: 350px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.hero-text{
-    color:whitesmoke
-    position:absolute;
+  }
+  
+  .hero-text {
+    color: whitesmoke; /* Added a semicolon here */
+    position: absolute;
     text-align: center;
-    top: 280px;
+    top: 130px;
     width: 100%;
     font-size: 6rem;
-}
-
-.four-column .image img {
-    width: 15%;
+  }
+  
+  .four-column .image img {
+    width: 15%; 
     height: 100%;
     object-fit: cover;
   }
   
   .four-column .image {
     /* Set a fixed height for the container */
-    height: 300px; 
+    height: 300px;
   }
-  
