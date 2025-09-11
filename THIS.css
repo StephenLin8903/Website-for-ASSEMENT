@@ -1,27 +1,73 @@
+/* two-column layout */
+.two-column {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 40px;
+  padding: 40px 20px; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.two-column .image {
+  flex: 1; 
+}
+
+.two-column .image img {
+  width: 100%; 
+  height: auto; 
+  display: block; 
+}
+
+.two-column .info {
+  flex: 2; 
+}
+
+
+.two-column:nth-of-type(odd) {
+  flex-direction: row-reverse;
+}
+
 .hero-image {
-    background: url("./Chess img/download.jpg");
-    height: 350px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .hero-text {
-    color: whitesmoke; /* Added a semicolon here */
-    position: absolute;
-    text-align: center;
-    top: 130px;
-    width: 100%;
-    font-size: 6rem;
-  }
-  
-  .four-column .image img {
-    width: 15%; 
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .four-column .image {
-    /* Set a fixed height for the container */
-    height: 300px;
-  }
+  background: url("./Chess img/download.jpg");
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  color: black; 
+  position: absolute;
+  text-align: center;
+  top: 130px;
+  width: 100%;
+  font-size: 6rem;
+}
+
+.three-column{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  width 80px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+
+.card{
+  background-color: rgb(9, 78, 9);
+}
+
+.card img {
+  width: 100%;
+  height: 250px; 
+  object-fit: cover; 
+  border-radius: 8px; 
+  margin-bottom: 10px;
+}
+.card-text{
+  text-align: center;
+  color:whitesmoke;
+} 
